@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+       <title>sign up form</title> 
+    </head>
+    <body bgcolor="grey">
+        <h3> imput use with attribute type 
+            and then other attribute name is used for server it doesnot effect the page format
+        </h3>
+        <h1>SIGN UP FORM</h1>
+        <h3>two method are use which is get and post ... post method use to hide info while get method cant</h3>
+        <form action="http://www.example.com/login.php" method="POST">
+            <fieldset
+            <legend> personal details</legend>
+            <p>first name
+              <input type="text" name="firstname" size="15" maxlength="15" required/>
+              last name
+              <input type="text" name="lastname" size="15" maxlength="15" required>
+            </p>
+            <p>
+                GENDER:
+                <input id="male" type="radio" name="gender" value="m"/>
+                <label for="male">Male</label>
+                 <label><input type="radio" name="gender" value="f" checked/>female</label>
+            </p>
+            <p>date of birth
+                <input type="date" name="dob">
+            </p>
+            <p> email address
+                <input type="email" name="email"/>
+            </p>
+            <p>
+                please enter your website
+                <input type="url" name="profile"/>
+            </p>
+            <p> NATIONALITY
+                <select name="countries" multiple>
+                    <option value="pakistan">pakistan</option>
+                    <option value="USA">USA</option>
+                    <option value="INDIA">INDIA</option>
+                    <option value="England">England</option>
+                    <option value="canada">canada</option>
+                    <option value="afghanistan">afghanistan</option>
+                </select>
+            </p>
+        </fieldset>
+            <p>
+                PASSWORD:
+                <input type="password" name="password" size="15" maxlength="30" required/>
+                RE ENTER PASSWORD:
+                <input type="password" name="password" size="15" maxlength="30"/>
+            </p>
+            <p>
+                interests
+                <input type="checkbox" name="interests" value="m"/> Artificial intelligence
+                <input type="checkbox" name="interests" value="v"/> Cloud Computing
+                <input type="checkbox" name="interests" value="n"/> Cyber Security
+                <input type="checkbox" name="interests" value="c"/>  METAVERSE ENGINERING
+            </p>
+            <p>
+                upload profile picture
+               <input type="file" name="dp"/>
+               <br/>
+               <input type="submit" value="upload"/>
+            </p>
+            <p>
+                COMMENTS:
+            </p>
+            <textarea name="comments" rows="4" col="15">Enter your comments...</textarea>
+            <br/>
+            <input type="submit"/>
+            <input type="image" src="fun.jpg.jpg" width="150"/>
+        </form>
+
+    </body>
+</html>
